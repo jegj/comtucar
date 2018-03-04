@@ -10,7 +10,7 @@
     "start": "node_modules/.bin/webpack-dev-server --hot --env=dev"
   },
   "dependencies": {
-    "jquery": "2.1.4"
+    "jquery": "3.0.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.5.0",

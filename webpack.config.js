@@ -20,19 +20,6 @@ module.exports = {
 		host: '0.0.0.0',
 		port: 9000,
 		inline: true,
-		proxy: [{
-			path: '/v0.3.3-alpha',
-			target: 'http://dbdash.lightyear:8888',
-			secure: false
-		}],
-		headers: {
-			"Access-Control-Allow-Origin": "*"
-		},
-		watchOptions: {
-			aggregateTimeout: 300,
-			poll: 1000,
-			ignored: /node_modules/
-		}
 	},
 	externals: {},
 	plugins: [
