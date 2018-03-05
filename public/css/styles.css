@@ -278,7 +278,7 @@ h6 {
 .teaser-slider-ph {
   height: 645px;
   pointer-events: none;
-  background: transparent url('../img/transparent.png');
+  /* background: transparent url('../img/transparent.png'); */
 }
 /* 6. Call to Action
 -------------------------------------*/
@@ -878,7 +878,7 @@ h6 {
 }
 /* 12. Reviews
 -------------------------------------*/
-.reviews {
+/* .reviews {
   padding: 80px 0 85px 0;
   background: #ffffff url("../img/review-background.jpg") no-repeat center fixed;
   background-size: cover;
@@ -955,7 +955,7 @@ h6 {
   font-size: 17px;
   color: #57bcca;
   font-weight: 400;
-}
+} */
 /* 13. About
 -------------------------------------*/
 .about {
