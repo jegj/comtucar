@@ -8,12 +8,21 @@ const webpack = require('webpack'),
 module.exports = {
 	entry: './src/app.js',
 	output: {
-		path: path.resolve(__dirname, '../build'),
+		path: path.resolve(__dirname, 'build'),
 		filename: 'bundle.js'
 	},
 	resolve: {
 		extensions: ['.js'],
 		modules: ['node_modules', 'src']
+	},
+	module: {
+		rules: [
+			{
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader']
+			},
+			{ test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
+		]
 	},
 	externals: {},
 	plugins: [
@@ -30,5 +39,4 @@ module.exports = {
 			{ from: 'public/images', to: 'images' },
 		])
 	],
-	devtool: "source-map"
 };

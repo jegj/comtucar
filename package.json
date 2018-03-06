@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --hot  -d --watch-poll --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js"
+    "build:prod": "webpack -p --config webpack.config.prod.js"
   },
   "dependencies": {
     "jquery": "3.0.0",
