@@ -37,6 +37,6 @@ module.exports = {
 			{ from: 'public/fonts', to: 'fonts' },
 			{ from: 'public/js', to: 'js' },
 			{ from: 'public/images', to: 'images' },
-		])
+		]),
 	],
 };
