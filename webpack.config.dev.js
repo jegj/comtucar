@@ -5,15 +5,37 @@ const webpack = require('webpack'),
 			CopyWebpackPlugin = require('copy-webpack-plugin'),
 			writeFilePlugin = require('write-file-webpack-plugin');
 
+
 module.exports = {
-	entry: './src/app.js',
+	context: __dirname + "/src",
+	entry: './app.js',
 	output: {
 		path: path.resolve(__dirname, '../build'),
 		filename: 'bundle.js'
 	},
 	resolve: {
 		extensions: ['.js'],
-		modules: ['node_modules', 'src']
+		modules: ['node_modules', 'src',],
+	},
+	module: {
+		rules: [
+			// {
+			// 	test: /\.(gif|png|jpe?g|svg)$/i,
+			// 	use: [
+			// 		'file-loader',
+			// 		{
+			// 			loader: 'image-webpack-loader',
+			// 			options: {
+			// 				bypassOnDebug: true,
+			// 			},
+			// 		},
+			// 	],
+			// }
+			{
+				test: /\.css$/,
+				use: [ 'style-loader', 'css-loader' ]
+			}
+		]
 	},
 	devServer: {
 		contentBase: path.resolve(__dirname, '../public'),
@@ -30,10 +52,10 @@ module.exports = {
 			inject: 'body',
 		}),
 		new CopyWebpackPlugin([
-			{ from: 'public/css', to: 'css' },
-			{ from: 'public/fonts', to: 'fonts' },
-			{ from: 'public/js', to: 'js' },
-			{ from: 'public/images', to: 'images' },
+			{ from: '../public/css', to: 'css' },
+			{ from: '../public/fonts', to: 'fonts' },
+			{ from: '../public/js', to: 'js' },
+			{ from: '../public/images', to: 'images' },
 		])
 	],
 	devtool: "source-map"

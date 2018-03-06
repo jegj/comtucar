@@ -1,3 +1,7 @@
+import './assets/css/styles.css';
+import './assets/css/font1.css';
+import './assets/css/font2.css';
+
 // Navigation Close on Click
 //-------------------------------------------------------------------------------
 $(document).ready(function () {

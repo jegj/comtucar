@@ -7,15 +7,20 @@
   "author": "Javier <jegj57@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --hot  --watch-poll"
+    "start": "node_modules/.bin/webpack-dev-server --hot  -d --watch-poll --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
   },
   "dependencies": {
-    "jquery": "3.0.0"
+    "jquery": "3.0.0",
+    "webpack": "^4.1.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.5.0",
+    "css-loader": "^0.28.10",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.0.4",
-    "webpack": "^4.0.1",
+    "image-webpack-loader": "^4.1.0",
+    "style-loader": "^0.20.2",
     "webpack-cli": "^2.0.10",
     "webpack-dev-server": "^3.1.0",
     "write-file-webpack-plugin": "^4.2.0"
