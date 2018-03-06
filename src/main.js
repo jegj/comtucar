@@ -1,10 +1,10 @@
 // Navigation Close on Click
 //-------------------------------------------------------------------------------
-// $(document).ready(function () {
-// 	$(".navbar-nav li a").on('click', function (event) {
-// 		// $(".navbar-collapse").collapse('hide');
-// 	});
-// });
+$(document).ready(function () {
+	$(".navbar-nav li a").on('click', function (event) {
+		$('.navbar-toggle').click()
+	});
+});
 
 // Scroll To Animation
 //-------------------------------------------------------------------------------
