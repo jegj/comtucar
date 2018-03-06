@@ -2,6 +2,23 @@ import './assets/css/styles.css';
 import './assets/css/font1.css';
 import './assets/css/font2.css';
 
+// Room Tabs
+//-------------------------------------------------------------------------------
+
+// Thumbnails
+$('.room-tabs-gallery').on('click', '.room-tabs-gallery-thumb', function () {
+	var tabId = $(this).attr('href');
+	var newImgSrc = $(this).find('img').attr('src');
+	var imgTitle = $(this).find('img').attr('title');
+
+	$(tabId + " .room-tabs-gallery-preview").fadeOut(100, function () {
+		$(tabId + " .room-tabs-gallery-preview").attr("src", newImgSrc);
+		$(tabId + " .room-tabs-gallery-preview").attr("title", imgTitle);
+	}).fadeIn(100);
+
+	return false;
+});
+
 // Navigation Close on Click
 //-------------------------------------------------------------------------------
 $(document).ready(function () {
