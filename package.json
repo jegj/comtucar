@@ -7,7 +7,7 @@
   "author": "Javier <jegj57@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --hot --env=dev"
+    "start": "node_modules/.bin/webpack-dev-server --hot  --watch-poll"
   },
   "dependencies": {
     "jquery": "3.0.0"
