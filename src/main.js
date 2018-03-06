@@ -37,3 +37,12 @@ $(window).scroll(function () {
 		$('.scroll-up-btn').fadeOut().addClass("animated fadeOutRight");
 	}
 });
+
+
+// Play Video
+//-------------------------------------------------------------------------------
+// $('.attractions').on('click', '.video-preview-img', function (ev) {
+// 	$("#youtubevideo")[0].src += "&autoplay=1";
+// 	$('.attractions .video').css('visibility', 'visible').hide().fadeIn(300).removeClass('hidden');
+// 	ev.preventDefault();
+// });
