@@ -2859,3 +2859,10 @@ footer:after {
     display: block !important;
   }
 }
+
+
+/* CUSTOM CLASSES */
+
+.attraction {
+  height: 250px !important;
+}
