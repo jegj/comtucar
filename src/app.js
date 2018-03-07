@@ -1,2 +1,2 @@
-window.$ = require('jquery');
+// window.$ = require('jquery');
 require('./main.js');

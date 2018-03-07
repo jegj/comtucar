@@ -43,8 +43,15 @@ module.exports = {
 		port: 9000,
 		inline: true,
 	},
-	externals: {},
+	// externals: {
+	// 	jquery: 'jQuery'
+	// },
 	plugins: [
+		// new webpack.ProvidePlugin({
+		// 	$: 'jquery',
+		// 	jQuery: 'jquery',
+		// 	'window.$': 'jquery',
+		// }),
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, './public/index.html'),
 			hash: true,
