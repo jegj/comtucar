@@ -415,7 +415,7 @@ h6 {
 -------------------------------------*/
 .room-tabs {
 	background-color: #ffffff;
-	padding: 80px 0 85px 0;
+	/* padding: 80px 0 85px 0; */
 }
 .room-tabs h2 {
 	font-size: 36px;
@@ -608,7 +608,7 @@ h6 {
 /* 10. Attractions
 -------------------------------------*/
 .attractions {
-	padding: 80px 0 85px 0;
+	/* padding: 80px 0 85px 0; */
 	background-color: #fff;
 }
 .attractions h2 {
