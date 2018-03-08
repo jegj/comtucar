@@ -8,11 +8,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --hot  -d --watch-poll --config webpack.config.dev.js",
-    "build:prod": "webpack -p --config webpack.config.prod.js"
+    "build:stage": "webpack -p --config webpack.config.prod.js"
   },
-  "dependencies": {
-    "webpack": "^4.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "compression-webpack-plugin": "^1.1.10",
     "copy-webpack-plugin": "^4.5.0",
@@ -21,6 +19,7 @@
     "html-webpack-plugin": "^3.0.4",
     "image-webpack-loader": "^4.1.0",
     "style-loader": "^0.20.2",
+    "webpack": "^4.1.1",
     "webpack-cli": "^2.0.10",
     "webpack-dev-server": "^3.1.0",
     "write-file-webpack-plugin": "^4.2.0"

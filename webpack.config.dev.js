@@ -19,18 +19,6 @@ module.exports = {
 	},
 	module: {
 		rules: [
-			// {
-			// 	test: /\.(gif|png|jpe?g|svg)$/i,
-			// 	use: [
-			// 		'file-loader',
-			// 		{
-			// 			loader: 'image-webpack-loader',
-			// 			options: {
-			// 				bypassOnDebug: true,
-			// 			},
-			// 		},
-			// 	],
-			// }
 			{
 				test: /\.css$/,
 				use: [ 'style-loader', 'css-loader' ]
@@ -43,15 +31,7 @@ module.exports = {
 		port: 9000,
 		inline: true,
 	},
-	// externals: {
-	// 	jquery: 'jQuery'
-	// },
 	plugins: [
-		// new webpack.ProvidePlugin({
-		// 	$: 'jquery',
-		// 	jQuery: 'jquery',
-		// 	'window.$': 'jquery',
-		// }),
 		new HtmlWebpackPlugin({
 			template: path.resolve(__dirname, './public/index.html'),
 			hash: true,
