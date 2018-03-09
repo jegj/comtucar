@@ -59,7 +59,10 @@ $(window).scroll(function () {
 	}
 });
 
-
+$('#callbtn').click(function(e){
+	window.location.href = 'tel:+51982880414';
+	// $('#calllink').trigger('click');
+});
 // Play Video
 //-------------------------------------------------------------------------------
 // $('.attractions').on('click', '.video-preview-img', function (ev) {
