@@ -2862,13 +2862,15 @@ footer:after {
 
 
 /* CUSTOM CLASSES */
-
+#logo {
+	font-size: 30px;
+}
 .attraction {
 	height: 250px !important;
 }
 
 .slogan{
-	font-size: 14px;
+	font-size: 10px;
 }
 .slogan > i {
 	color: yellow;
