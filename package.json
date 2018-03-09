@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "Contucar new web page",
   "main": "index.js",
-  "homepage": "https://github.com/jegj/comtucar",
+  "homepage": "https://jegj.github.io/comtucar/",
   "repository": "https://github.com/jegj/comtucar.git",
   "author": "Javier <jegj57@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --hot  -d --watch-poll --config webpack.config.dev.js",
     "build:stage": "webpack -p --config webpack.config.prod.js",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "dependencies": {},
   "devDependencies": {
