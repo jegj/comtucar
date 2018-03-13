@@ -337,7 +337,7 @@ h6 {
 /* 7. Features
 -------------------------------------*/
 .features {
-	padding-top: 160px;
+	padding-top: 80px;
 	padding-bottom: 85px;
 	background-color: #f1f1f1;
 }
@@ -1815,7 +1815,7 @@ footer:after {
 	/* 7. Features 1200px
 	-------------------------------------*/
 	.features {
-		padding-top: 140px;
+		padding-top: 70px;
 		padding-bottom: 70px;
 	}
 	.features h2 {
@@ -2874,4 +2874,8 @@ footer:after {
 }
 .slogan > i {
 	color: yellow;
+}
+
+.phones > li > a {
+	text-decoration: none;
 }
