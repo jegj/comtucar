@@ -61,12 +61,14 @@ $(window).scroll(function () {
 
 $('#callbtn').click(function(e){
 	window.location.href = 'tel:+51982880414';
-	// $('#calllink').trigger('click');
 });
-// Play Video
-//-------------------------------------------------------------------------------
-// $('.attractions').on('click', '.video-preview-img', function (ev) {
-// 	$("#youtubevideo")[0].src += "&autoplay=1";
-// 	$('.attractions .video').css('visibility', 'visible').hide().fadeIn(300).removeClass('hidden');
-// 	ev.preventDefault();
-// });
+
+$('.show-inquiry-modal').on('click', function () {
+	// var object = $(this).data('object');
+	// if (object) {
+	// 	$("#inquiry-object").val(object);
+	// }
+	$('#inquiryModal').modal('show');
+	return false;
+});
+
