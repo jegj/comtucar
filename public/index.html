@@ -601,8 +601,10 @@
  data-backdrop="static">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<form action="#" id="inquiry-form" name="inquiry-form">
+			<form method="POST" action="https://formspree.io/reservas@comtucar.com" id="inquiry-form" name="inquiry-form">
+				<input type="hidden" name="_subject" value="Nueva Reserva" />
 				<input type="hidden" name="action" value="send_inquiry_form">
+				<input type="hidden" name="_language" value="es" />
 				<!-- Modal header start -->
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
@@ -621,25 +623,25 @@
 						<div class="alert hidden" id="inquiry-form-msg"></div>
 						<div class="room-select">
 							<div class="input-group">
-								<select name="inquiry-object" id="inquiry-object" class="form-control">
+								<select name="Habitación" id="inquiry-object" class="form-control" required>
 									<option value="">Seleccione su Habitación</option>
-									<option value="Single Room">Simple ( Desde  S/.60)</option>
-									<option value="The Cottage">Doble/Matrimoniales( Desde S/.100)</option>
-									<option value="Guest House">Triples( Desde S/.140)</option>
-									<option value="The Sea Villa">Suite Matriomonial( Desde S/.160)</option>
+									<option value="Simple">Simple ( Desde  S/.60)</option>
+									<option value="Doble/Matrimonial">Doble/Matrimonial( Desde S/.100)</option>
+									<option value="Triple">Triples( Desde S/.140)</option>
+									<option value="Suite Matrimonial">Suite Matriomonial( Desde S/.160)</option>
 								</select>
 							</div>
 						</div>
 
 						<div class="inquiry-check-in">
 							<div class="date-select">
-								<label for="inquiry-date-check-in">Fecha de Arrivo</label>
+								<label for="Fecha de Arrivo">Fecha de Arrivo</label>
 
 								<div class="input-group">
 									<span class="input-group-addon">
 										<i class="icon-calendar"></i>
 									</span>
-									<input type="text" class="form-control datepicker" name="inquiry-date-check-in" id="inquiry-date-check-in" placeholder="Fecha: mm/dd/yyyy">
+									<input type="text" class="form-control datepicker" name="Fecha de Arrivo" id="inquiry-date-check-in" placeholder="Fecha: mm/dd/yyyy" required>
 								</div>
 							</div>
 
@@ -650,7 +652,7 @@
 									<span class="input-group-addon">
 										<i class="icon-clock"></i>
 									</span>
-									<select name="inquiry-time-check-in" class="form-control" id="inquiry-time-check-in">
+									<select name="Hora Llegada" class="form-control" id="inquiry-time-check-in" required>
 										<option value="">Seleccione la Hora</option>
 										<option value="12:00 AM">12:00 AM</option>
 										<option value="12:30 AM">12:30 AM</option>
@@ -709,13 +711,13 @@
 
 						<div class="inquiry-check-out">
 							<div class="date-select">
-								<label for="inquiry-date-check-out">Fecha de Salida</label>
+								<label for="Fecha de Salida">Fecha de Salida</label>
 
 								<div class="input-group">
 									<span class="input-group-addon">
 										<i class="icon-calendar"></i>
 									</span>
-									<input type="text" class="form-control datepicker" name="inquiry-date-check-out" placeholder="Fecha: mm/dd/yyyy" id="inquiry-date-check-out">
+									<input type="text" class="form-control datepicker" name="Fecha de Salida" placeholder="Fecha: mm/dd/yyyy" id="inquiry-date-check-out" required>
 								</div>
 							</div>
 							<div class="time-select">
@@ -725,7 +727,7 @@
 									<span class="input-group-addon">
 										<i class="icon-clock"></i>
 									</span>
-									<select name="inquiry-time-check-out" class="form-control" id="inquiry-time-check-out">
+									<select name="Hora de Salida" class="form-control" id="inquiry-time-check-out" required>
 										<option value="">Seleccione la Hora</option>
 										<option value="12:00 AM">12:00 AM</option>
 										<option value="12:30 AM">12:30 AM</option>
@@ -790,35 +792,35 @@
 						<h2>Información Personal</h2>
 
 						<div class="form-group first-name-group">
-							<label for="first-name">Nombre</label>
-							<input type="text" name="first-name" class="form-control" id="first-name" placeholder="Coloque su Nombre">
+							<label for="Nombre">Nombre</label>
+							<input type="text" name="Nombre" class="form-control" id="first-name" placeholder="Coloque su Nombre" required>
 						</div>
 						<div class="form-group last-name-group">
-							<label for="last-name">Apellido</label>
-							<input type="text" name="last-name" class="form-control" id="last-name" placeholder="Coloque su Apellido">
+							<label for="Apellido">Apellido</label>
+							<input type="text" name="Apellido" class="form-control" id="last-name" placeholder="Coloque su Apellido" required>
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-group address-group">
-							<label for="address">Dirección</label>
-							<input type="text" name="address" class="form-control" id="address" placeholder="Coloque su dirección">
+							<label for="Dirección">Dirección</label>
+							<input type="text" name="Dirección" class="form-control" id="address" placeholder="Coloque su dirección" required>
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-group city-group">
-							<label for="city">Ciudad</label>
-							<input type="text" name="city" class="form-control" id="city" placeholder="Coloque su Ciudad">
+							<label for="Ciudad">Ciudad</label>
+							<input type="text" name="Ciudad" class="form-control" id="city" placeholder="Coloque su Ciudad" required>
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-group phone-group">
-							<label for="phone">Telefono</label>
-							<input type="text" name="phone" class="form-control" id="phone" placeholder="Coloque su Telefono">
+							<label for="Telefono">Telefono</label>
+							<input type="tel" name="Telefono" class="form-control" id="phone" placeholder="Coloque su Telefono" required>
 						</div>
 						<div class="form-group email-group">
 							<label for="email">Correo</label>
-							<input type="text" name="email" class="form-control" id="email" placeholder="Coloque su Correo">
+							<input type="email" name="email" class="form-control" id="email" placeholder="Coloque su Correo" required>
 						</div>
 						<div class="form-group additional-details">
-							<label for="email">Información Adicional</label>
-							<textarea name="details" class="form-control" id="details" rows="4"></textarea>
+							<label for="Información Adicional">Información Adicional</label>
+							<textarea name="Información Adicional" class="form-control" id="details" rows="4"></textarea>
 						</div>
 						<div class="clearfix"></div>
 					</div>
