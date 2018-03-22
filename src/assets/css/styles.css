@@ -337,7 +337,7 @@ h6 {
 /* 7. Features
 -------------------------------------*/
 .features {
-	padding-top: 80px;
+	padding-top: 40px;
 	padding-bottom: 85px;
 	background-color: #f1f1f1;
 }
@@ -345,7 +345,7 @@ h6 {
 	text-align: center;
 	font-size: 48px;
 	font-weight: lighter;
-	margin: 0 0 78px 0;
+	margin: 0 0 38px 0;
 	padding: 0;
 	color: #4a4a4a;
 }
@@ -415,7 +415,7 @@ h6 {
 -------------------------------------*/
 .room-tabs {
 	background-color: #ffffff;
-	padding: 80px 0 85px 0;
+	padding: 40px 0 40px 0;
 }
 .room-tabs h2 {
 	font-size: 36px;
@@ -608,7 +608,7 @@ h6 {
 /* 10. Attractions
 -------------------------------------*/
 .attractions {
-	padding: 80px 0 85px 0;
+	padding:40px 0 40px 0;
 	background-color: #fff;
 }
 .attractions h2 {
@@ -1340,7 +1340,7 @@ h6 {
 /* 20. Address
 -------------------------------------*/
 .address {
-	padding: 70px 0 70px 0;
+	padding: 40px 0 40px 0;
 	background-color: #eaf5f7;
 	text-align: center;
 }
@@ -1820,12 +1820,12 @@ footer:after {
 	/* 7. Features 1200px
 	-------------------------------------*/
 	.features {
-		padding-top: 70px;
-		padding-bottom: 70px;
+		padding-top: 40px;
+		padding-bottom: 30px;
 	}
 	.features h2 {
 		font-size: 42px;
-		margin: 0 0 65px 0;
+		margin: 0 0 35px 0;
 	}
 	.features .feature {
 		border-bottom: 5px solid #57bcca;
@@ -1849,8 +1849,8 @@ footer:after {
 	/* 8. Room Tabs 1200px
 	-------------------------------------*/
 	.room-tabs {
-		padding-top: 70px;
-		padding-bottom: 70px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	.room-tabs h2 {
 		font-size: 32px;
@@ -1906,8 +1906,8 @@ footer:after {
 	/* 10. Attractions 1200px
 	-------------------------------------*/
 	.attractions {
-		padding-top: 70px;
-		padding-bottom: 70px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	.attractions h2 {
 		font-size: 42px;
@@ -2056,8 +2056,8 @@ footer:after {
 	/* 16. Services 1200px
 	-------------------------------------*/
 	.services {
-		padding-top: 70px;
-		padding-bottom: 37px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	.services h2 {
 		font-size: 42px;
@@ -2102,8 +2102,8 @@ footer:after {
 	/* 17. Content 1200px
 	-------------------------------------*/
 	.content {
-		padding-top: 70px;
-		padding-bottom: 70px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	.content h2 {
 		font-size: 32px;
@@ -2169,8 +2169,8 @@ footer:after {
 	/* 20. Address 1200px
 	-------------------------------------*/
 	.address {
-		padding-top: 70px;
-		background-position: 70px;
+		padding-top: 30px;
+		background-position: 30px;
 	}
 	.address h2 {
 		margin-bottom: 15px;
@@ -2504,7 +2504,7 @@ footer:after {
 		height: 430px;
 	}
 	.teaser-slider-ph {
-		height: 425px;
+		height: 400px;
 	}
 	/* 7. Features 768px
 	-------------------------------------*/
