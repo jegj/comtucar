@@ -313,20 +313,20 @@
 					<!--Room Tabs Nav start -->
 					<ul class="nav nav-tabs" role="tablist">
 						<li role="presentation" class="active">
-							<a href="#object1" aria-controls="object1" role="tab" data-toggle="tab">Sala de Recepciones</a>
-						</li>
-						<li role="presentation" >
 							<a href="#object2" aria-controls="object2" role="tab" data-toggle="tab">Habitaciones</a>
 						</li>
 						<li role="presentation">
 							<a href="#object3" aria-controls="object3" role="tab" data-toggle="tab">Áreas Comunes</a>
+						</li>
+						<li role="presentation">
+							<a href="#object1" aria-controls="object1" role="tab" data-toggle="tab">Sala de Recepciones</a>
 						</li>
 					</ul>
 					<!--Room Tabs Nav end -->
 	
 					<!-- Tabs start -->
 					<div class="tab-content">
-					<div role="tabpanel" class="tab-pane fade in active" id="object1">
+					<div role="tabpanel" class="tab-pane fade" id="object1">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="room-tabs-gallery">
@@ -373,7 +373,7 @@
 						</div>
 						<!--Room Tab 1 end-->
 						<!--Room Tab 1 start-->
-						<div role="tabpanel" class="tab-pane fade" id="object2">
+						<div role="tabpanel" class="tab-pane fade in active" id="object2">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="room-tabs-gallery">
@@ -704,12 +704,35 @@
 							<div class="input-group">
 								<select name="Habitación" id="inquiry-object" class="form-control" required>
 									<option value="">Seleccione su Habitación</option>
-									<option value="Simple">Simple ( Desde  S/.60)</option>
-									<option value="Doble/Matrimonial">Doble/Matrimonial( Desde S/.100)</option>
-									<option value="Triple">Triples( Desde S/.140)</option>
-									<option value="Suite Matrimonial">Suite Matriomonial( Desde S/.160)</option>
+									<option value="Simple">Simple (S/.60)</option>
+									<option value="Simple-Temporada Alta">Simple - Semana Santa o Fiestas Patrias(S/.100)</option>
+									<option value="Doble/Matrimonial">Doble/Matrimonial(S/.100)</option>
+									<option value="Doble/Matrimonial-Temporada Alta">Doble/Matrimonial - Semana Santa o Fiestas Patrias( Desde S/.160)</option>
+									<option value="Triple">Triples(S/.140)</option>
+									<option value="Triple-Temporada Alta">Triples - Semana Santa o Fiestas Patrias(S/.180)</option>
+									<option value="Suite Matrimonial">Suite Matriomonial(S/.160)</option>
+									<option value="Suite Matrimonial-Temporada Alta">Suite Matriomonial - Semana Santa o Fiestas Patrias(S/.230)</option>
 								</select>
 							</div>
+						</div>
+
+						<div class="form-group first-name-group">
+							<label for="Número Total del Pasajeros">Número Total del Pasajeros</label>	
+							<input step="1" min="1" type="number" class="form-control" name="Total Pasajeros" id="total-passengers" placeholder="Número Total del Pasajeros" required>
+						</div>
+						<div class="form-group last-name-group">
+							<label for="Cama Adicionales">Cama Adicionales</label>	
+							<input value="0" step="1" min="0" type="number" class="form-control" name="Cama Adicionales" id="extra-beds" placeholder="Camas Adicionales">
+						</div>
+						
+						<label><b>(*)Los desayunos son incluidos en la tarifa de Temporada Alta</b></label>	
+						<div class="form-group first-name-group">
+							<label for="Desayuno Continental">Desayuno Continental</label>	
+							<input value="0" step="1" min="0" type="number" class="form-control" name="Desayuno Continental" id="continental-break" placeholder="Desayuno Continental">
+						</div>
+						<div class="form-group last-name-group">
+							<label for="Desayuno Americano">Desayuno Americano</label>	
+							<input value="0" step="1" min="0" type="number" class="form-control" name="Desayuno Americano" id="american-break" placeholder="Desayuno Americano">
 						</div>
 
 						<div class="inquiry-check-in">

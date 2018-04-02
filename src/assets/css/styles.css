@@ -1676,6 +1676,16 @@ footer:after {
 #inquiryModal .modal-dialog .modal-content .modal-body .personal-information {
 	padding: 0px 30px 20px 30px;
 }
+#inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .first-name-group {
+	float: left;
+	width: 50%;
+	padding-right: 7px;
+}
+#inquiryModal .modal-dialog .modal-content .modal-body .room-and-date .last-name-group {
+	float: right;
+	width: 50%;
+	padding-left: 7px;
+}
 #inquiryModal .modal-dialog .modal-content .modal-body .personal-information .first-name-group {
 	float: left;
 	width: 50%;
