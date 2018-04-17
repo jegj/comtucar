@@ -26,9 +26,6 @@
 		<!-- Bootstrap 3 Date Picker -->
 		<link href="./css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
 
-		<!-- Google Open Sans Font -->
-		<!-- <link href="./css/css(1).css" rel="stylesheet" type="text/css"> -->
-
 		<!-- Font Awesome -->
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -87,30 +84,38 @@
 								<ul class="nav navbar-nav navbar-right">
 										<li>
 											<a class="scroll-to" href="#sc-aboutus">
-												Quienes Somos
+												<span class="trn" data-trn-key="navbar:whoarewe">
+													Quienes Somos
+												</span>
 											</a>
 										</li>
 										<li class="">
 											<a class="scroll-to" href="#sc-rooms">
-												Nuestros Servicios
+												<span class="trn" data-trn-key="navbar:services">
+													Nuestros Servicios
+												</span>
 											</a>
 										</li>
 										<li>
 											<a class="show-inquiry-modal" href="#sc-rates">
-												Reservas
+												<span class="trn" data-trn-key="navbar:booking">
+													Reservas
+												</span>
 											</a>
 										</li>
 										<li>
 											<a class="scroll-to" href="#sc-attractions" data-toggle="collapse" data-target=".navbar-collapse.in" >
-												Lugares Turísticos
+												<span class="trn" data-trn-key="navbar:areas">
+													Lugares Turísticos
+												</span>
 											</a>
 										</li>
 										<li>
 											<!--Language-Select start-->
 											<div class="language-select">
-												<a href="http://accommodation.themeinjection.com/theme/index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-													<img src="./images/uk_flag.png" alt="English"> 
-													English
+												<a href="#" class="dropdown-toggle lang_selector" data-value="en" data-toggle="dropdown" role="button" aria-expanded="false">
+													<img src="./images/en_flag.png" alt="English"> 
+													<span class="lng_label">English</span>
 													<i class="glyphicon glyphicon-resize-vertical"></i>
 												</a>
 											</div>
@@ -173,7 +178,9 @@
 						<i class="fa fa-star" style="color:yellow"></i>
 					</h2>
 					<address>Carretera Central Carhuaz - Huaraz N° 1099</address>
-					<p class="address-info">Si tienes preguntas, no dudes en llamarnos o escribirnos:</p>
+					<p class="address-info trn"  data-trn-key="slogan">
+						Si tienes preguntas, no dudes en llamarnos o escribirnos:
+					</p>
 					<ul class="phones">
 						<li>
 							<a href="tel:+51043394051">
@@ -196,28 +203,14 @@
 		</div>
 	</section>
 
-	<!--Call to Action start-->
-	<!-- <section class="call-to-action container" id="sc-call-to-action">
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
-				<div class="call-to-action-box text-center">
-					<div class="call-to-action-triangle"></div>
-					<button id="callbtn" class="btn btn-color1 call-to-action-button show-inquiry-modal">
-						<i class="icon-calendar icons"></i> Llamanos!
-					</button>
-					<a id="calllink" class="call-to-action-phone" href="tel:+51043394051">+51 (043) 394051 </a>
-				
-				</div>
-			</div>
-		</div>
-	</section> -->
-
 	<!--Features start-->
 	<section class="features" id="sc-features">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Bienvenidos</h2>
+					<h2 class="trn" data-trn-key="welcome">
+						Bienvenidos
+					</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -227,8 +220,10 @@
 						<div class="feature-icon">
 								<i class="fa fa-sun-o" aria-hidden="true"></i>
 						</div>
-						<h3>Clima</h3>
-						<p align="justify">
+						<h3 class="trn" data-trn-key="fatures:climate">
+							Clima
+						</h3>
+						<p align="justify" class="trn" data-trn-key="feature:climate:des">
 							Sol radiante todo el año para poder disfrutar de la mejor manera las diversas excursiones y atractivos turisticos de la
 							región.
 						</p>
@@ -244,13 +239,15 @@
 								<i class="icon-map"></i>
 							</a>
 						</div>
-						<h3>Ubicación Ideal</h3>
-						<p align="justify">
+						<h3 class="trn" data-trn-key="features:location">
+							Ubicación Ideal
+						</h3>
+						<p align="justify" class="trn" data-trn-key="feature:location:des">
 							Inmejorable en la carretera Huaraz - Caraz, a tan solo 25 minutos de Huaraz. Nuestra ubicacion privilegiada nos ubica en
 							el centro de los atractivos turisticos. 
 						</p>
 						<a style="margin-bottom: 5px;" target="blank" title="Ver Ubicación" href="https://www.google.com.pe/maps/place/Hotel+COMTUCAR/@-9.2877874,-77.6400216,17z/data=!4m5!3m4!1s0x91a9419cfaadcf2b:0x1709cde9935fa88!8m2!3d-9.2876512!4d-77.6399916?hl=es-419" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">
-							<i class="fa fa-map-marker"></i> Ver Ubicación
+							<i class="fa fa-map-marker"></i> <span  class="trn" data-trn-key="feature:location:btn">Ver Ubicación</span>	
 						</a>
 					</div>
 				</div>
@@ -262,8 +259,10 @@
 						<div class="feature-icon">
 							<i class="fa fa-tree"></i>
 						</div>
-						<h3>Encuentro Natural</h3>
-						<p align="justify">
+						<h3 class="trn" data-trn-key="feature:nature">
+							Encuentro Natural
+						</h3>
+						<p align="justify" class="trn" data-trn-key="feature:nature:des">
 							Un lugar para disfrutar con la familia y amigos rodeado de arboles frutales y plantas silvestres, con vista al majestuoso nevado Hualcan o a la Cordillera Negra rodeado de tranquilidad, naturaleza y aire puro.
 						</p>
 					</div>
@@ -957,23 +956,9 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="./js/jquery.min.js"></script>
-
-<!--Start Style Switcher (remove before upload to Themeforest)-->
-<!-- <script src="./theme_files/style-switcher.js"></script> -->
-<!--End Style Switcher (remove before upload to Themeforest)-->
-
-<!-- <script src="./js/jquery.placeholder.min.js"></script>
-<script src="./js/jquery.waypoints.min.js"></script>-->
+<script src="./js/jquery.translate.min.js"></script>
 <script src="./js/bootstrap-datepicker.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="./js/bootstrap.min.js"></script>
-
-<!-- Google Maps Api -->
-<!-- <script style="" type="text/javascript" src="./theme_files/js"></script> -->
-
-
-<!-- <script src="./theme_files/custom.js"></script> -->
-
-
 </body>
 </html>

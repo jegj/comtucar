@@ -46,7 +46,6 @@ $(document).ready(function () {
 	});
 });
 
-
 // Scroll Up Btn
 //-------------------------------------------------------------------------------
 $(window).scroll(function () {
@@ -58,7 +57,6 @@ $(window).scroll(function () {
 		$('.scroll-up-btn').fadeOut().addClass("animated fadeOutRight");
 	}
 });
-
 
 $.fn.datepicker.dates['es'] = {
 	days: ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"],
@@ -82,21 +80,91 @@ $('.datepicker').datepicker({
 	$(this).datepicker('hide');
 });
 
-
 // PHONE ACTION
-
 $('#callbtn').click(function(e){
 	window.location.href = 'tel:+51982880414';
 });
 
 //MODAL
-
 $('.show-inquiry-modal').on('click', function () {
-	// var object = $(this).data('object');
-	// if (object) {
-	// 	$("#inquiry-object").val(object);
-	// }
 	$('#inquiryModal').modal('show');
 	return false;
 });
 
+// TRANSLATE
+
+$(document).ready(function () {
+	var t = {
+		'navbar:whoarewe': {
+			es: "Quienes Somos",
+			en: "Who are we"
+		},
+		'navbar:services': {
+			es: "Nuestros Servicios",
+			en: "Our Services"
+		},
+		'navbar:booking': {
+			es: "Reservas",
+			en: "Booking"
+		},
+		'navbar:areas': {
+			es: "Lugares Turísticos",
+			en: "Touristic Areas"
+		},
+		'slogan': {
+			es: "Si tienes preguntas, no dudes en llamarnos o escribirnos:",
+			en: "If you have any questions,  call or write to us:"
+		},
+		'welcome': {
+			es: "Bienvenidos",
+			en: "Welcome"
+		},
+		'fatures:climate': {
+			es: "Clima",
+			en: "Climate"
+		},
+		'feature:climate:des': {
+			es: "Sol radiante todo el año para poder disfrutar de la mejor manera las diversas excursiones y atractivos turisticos de la región.",
+			en: "Radiant sun all year round to enjoy the excursions and touristic attractions in the region."
+		},
+		'features:location': {
+			es: "Ubicación Ideal",
+			en: "Ideal Location"
+		},
+		'feature:location:des': {
+			es: "Inmejorable en la carretera Huaraz - Caraz, a tan solo 25 minutos de Huaraz. Nuestra ubicacion privilegiada nos ubica en el centro de los atractivos turisticos.",
+			en: "The best in the Huaraz – Caraz motorway, only 25 minutes from Huaraz. Our privileged location puts us right in the middle of all the attractions."
+		},
+		'feature:location:btn': {
+			es: "Ver Ubicación",
+			en: "Go to Map"
+		},
+		'feature:nature': {
+			es:'Encuentro Natural',
+			en:'Encounter with Nature'
+		},
+		'feature:nature:des': {
+			es: 'Un lugar para disfrutar con la familia y amigos rodeado de arboles frutales y plantas silvestres, con vista al majestuoso nevado Hualcan o a la Cordillera Negra rodeado de tranquilidad, naturaleza y aire puro.',
+			en: 'An ideal place to enjoy with family and friends surrounded by nature and the imposing Hualcan snow covered peak or by the Black mountains with pure air'
+		}
+	};
+	var _t = $('body').translate({ lang: "es", t: t });
+
+	function op(lg) {
+		if ( lg === 'en' ) {
+			return 'es';
+		} else {
+			return 'en';
+		}
+	}
+
+	$(".lang_selector").click(function (ev) {
+		var lang = $(this).attr("data-value");
+		_t.lang(lang);
+		ev.preventDefault();
+		$(this).attr('data-value', op(lang));
+		$(this).children('img').attr('src', './images/' + op(lang) + '_flag.png');
+		$('.lng_label').html( lang === 'en' ? 'Español' : 'English');
+	});
+
+});
