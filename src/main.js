@@ -119,6 +119,7 @@ $(document).ready(function () {
 			es: "Bienvenidos",
 			en: "Welcome"
 		},
+		// FEATURES
 		'fatures:climate': {
 			es: "Clima",
 			en: "Climate"
@@ -146,7 +147,45 @@ $(document).ready(function () {
 		'feature:nature:des': {
 			es: 'Un lugar para disfrutar con la familia y amigos rodeado de arboles frutales y plantas silvestres, con vista al majestuoso nevado Hualcan o a la Cordillera Negra rodeado de tranquilidad, naturaleza y aire puro.',
 			en: 'An ideal place to enjoy with family and friends surrounded by nature and the imposing Hualcan snow covered peak or by the Black mountains with pure air'
-		}
+		},
+		//WHOAREWE
+		'whoarewe:title': {
+			es: 'Quienes Somos',
+			en: 'Who are we'
+		},
+		'whoarewe:p1': {
+			es: 'El Complejo Turístico Carhuaz S.A. es un Hotel 3 estrellas fruto de una iniciativa familiar, damos una calurosa bienvenida a los turistas nacionales y extranjeros que deciden visitar el Corazón del Callejón de Huaylas.Nuestra misión es servir amistosamente a quienes nos visitan, esmerándonos para que su estadía sea placentera y confortable, porque ponemos en cada nuevo huésped el mismo entusiasmo que tuvimos con el primero.',
+			en: 'Complejo Turistico Carhuaz S.A. is a 3 star hotel family business.  We welcome national and foreign tourists who decide to visit the heart of the Callejón de Huaylas.  Our mission is to serve all our visitors, doing  our best to make sure your stay is pleasurable and comfortable, because we put the same effort and enthusiasm each time we serve each guest as we did with the first one'
+		},
+		'whoarewe:p2': {
+			es: 'Las características físicas, naturales y de ubicación convierten al Hotel en un lugar ideal para viajeros que vienen a descansar, en busca de la naturaleza y una alternativa tranquila y placentera comparada al bullicio que se encuentra en hoteles en Huaraz.Por otro lado Carhuaz está ubicado a una altura de 450 metros menos sobre el nivel del mar comparado con Huaraz.',
+			en: 'Our unique location make the hotel the ideal place for travellers who come for a rest in an encounter with nature and a peaceful alternative,  far from the hustle and bustle from the hotels in Huaraz.  Furthermore, Carhuaz is located at 450 meters above sea level lower than Huaraz,  making it a warmer alternative at night.'
+		},
+		// SERVICES
+		'services:title': {
+			es: 'Nuestros Servicios',
+			en: 'Our Services'
+		},
+		'services:rooms': {
+			es: 'Habitaciones',
+			en: 'Rooms'
+		},
+		'services:communalareas': {
+			es: 'Áreas Comunes',
+			en: 'Communal Areas'
+		},
+		'services:conference': {
+			es: 'Sala de Recepciones',
+			en: 'Conference/Event/Meeting room'
+		},
+		'services:conference:des': {
+			es: 'Ofrecemos ambientes y salones especialmente acondicionados para eventos: Matrimonios, conferencias, exposiciones, agasajos, etc.',
+			en: 'We have designated areas suitable for your business meetings, conferences or wedding and any other kind of celebration.'
+		},
+		'services:reserve': {
+			es: 'Reserva Ahora',
+			en: 'Book Now'
+		},
 	};
 	var _t = $('body').translate({ lang: "es", t: t });
 
