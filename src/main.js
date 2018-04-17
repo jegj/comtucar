@@ -182,10 +182,98 @@ $(document).ready(function () {
 			es: 'Ofrecemos ambientes y salones especialmente acondicionados para eventos: Matrimonios, conferencias, exposiciones, agasajos, etc.',
 			en: 'We have designated areas suitable for your business meetings, conferences or wedding and any other kind of celebration.'
 		},
-		'services:reserve': {
+		'services:conference:d1': {
+			es: 'Servicios de mozos, vajilla, mantelería',
+			en: 'Waiters and Tableware\'s service'
+		},
+		'services:conference:d2': {
+			es: 'Servicio de amplificación, música ambiental',
+			en: 'Amplification service, environmental music'
+		},
+		'services:conference:d3': {
+			es: 'Opciones de comidas típicas o la alternativa que Ud. disponga, pues finalmente estamos para servirlo',
+			en: 'Typical food options or the alternative that you have, because finally we are here to serve you'
+		},
+		'services:book:btn': {
 			es: 'Reserva Ahora',
 			en: 'Book Now'
 		},
+		'services:rooms:des': {
+			es: 'Contamos con 38 habitaciones las cuales cuentan con la siguientes facilidades:',
+			en: 'We have 38 rooms (single, doubles and triples) with the following features:'
+		},
+		'services:rooms:single': {
+			es: 'Simples',
+			en: 'Singles'
+		},
+		'services:rooms:double': {
+			es: 'Dobles/Matrimoniales',
+			en: 'Double/Matrimonial'
+		},
+		'services:rooms:triple': {
+			es: 'Triple',
+			en: 'Triple'
+		},
+		'services:rooms:jacuzzi': {
+			es: 'Suite con jacuzzi',
+			en: 'Jacuzzi Suite'
+		},
+		'services:rooms:privatebathroom': {
+			es: 'Baño Privado',
+			en: 'Private Bathroom'
+		},
+		'services:rooms:phone': {
+			es: 'Teléfono',
+			en: 'Phone'
+		},
+		'services:rooms:intercom': {
+			es: 'Intercomunicador',
+			en: 'Intercom'
+		},
+		'services:communalareas:des': {
+			es: 'Pensando en su estadia y sus necesidades contamos con las siguentes instalaciones y servicios:',
+			en: 'We have the following areas and services at your disposal:'
+		},
+		'services:communalareas:restaurant': {
+			es: 'Restaurant,  bar y cafeteria',
+			en: 'Restaurant/Coffee Bar'
+		},
+		'services:communalareas:living': {
+			es: 'Sala de Estar',
+			en: 'Living Room'
+		},
+		'services:communalareas:services:communalareas:laundry': {
+			es: 'Lavanderia',
+			en: 'Laundry Service'
+		},
+		'services:communalareas:aud': {
+			es: 'Restaurant,  bar y cafeteria',
+			en: 'Auditorium/Conference Room'
+		},
+		'services:communalareas:parking': {
+			es: 'Estacionamiento Privado',
+			en: 'Private Parking'
+		},
+		'services:communalareas:country': {
+			es: 'Zona Campestre',
+			en: 'Country Zone'
+		},
+		'services:communalareas:vigilence': {
+			es: 'Guardiania Permanente',
+			en: 'Continued vigilance'
+		},
+		'services:communalareas:fronton': {
+			es: 'Cancha de frontón',
+			en: 'Fronton court'
+		},
+		'services:communalareas:pool': {
+			es: 'Piscina',
+			en: 'Swimming Pool'
+		},
+		'services:communalareas:lookput': {
+			es: 'Mirador con vistas para tomar fotografias a los nevados y al paisaje andino',
+			en: 'Tourist lookout to take snapshots of the snow-capped mountains'
+		}
 	};
 	var _t = $('body').translate({ lang: "es", t: t });
 
