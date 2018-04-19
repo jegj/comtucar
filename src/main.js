@@ -97,7 +97,7 @@ $(document).ready(function () {
 	var t = {
 		'navbar:whoarewe': {
 			es: "Quienes Somos",
-			en: "Who are we"
+			en: "Who we are"
 		},
 		'navbar:services': {
 			es: "Nuestros Servicios",
@@ -105,7 +105,7 @@ $(document).ready(function () {
 		},
 		'navbar:booking': {
 			es: "Reservas",
-			en: "Booking"
+			en: "Bookings"
 		},
 		'navbar:areas': {
 			es: "Lugares Turísticos",
@@ -151,7 +151,7 @@ $(document).ready(function () {
 		//WHOAREWE
 		'whoarewe:title': {
 			es: 'Quienes Somos',
-			en: 'Who are we'
+			en: 'Who we are'
 		},
 		'whoarewe:p1': {
 			es: 'El Complejo Turístico Carhuaz S.A. es un Hotel 3 estrellas fruto de una iniciativa familiar, damos una calurosa bienvenida a los turistas nacionales y extranjeros que deciden visitar el Corazón del Callejón de Huaylas.Nuestra misión es servir amistosamente a quienes nos visitan, esmerándonos para que su estadía sea placentera y confortable, porque ponemos en cada nuevo huésped el mismo entusiasmo que tuvimos con el primero.',
@@ -317,8 +317,8 @@ $(document).ready(function () {
 
 
 		'booking:label': {
-			es: 'Reserva',
-			en: 'Booking'
+			es: 'Reservas',
+			en: 'Bookings'
 		},
 		'booking:select': {
 			es: 'Seleccione su Habitación',
@@ -405,8 +405,8 @@ $(document).ready(function () {
 			en: 'Name'
 		},
 		'booking:surname': {
-			es: 'Surname',
-			en: 'Apellido'
+			es: 'Apellido',
+			en: 'Surname'
 		},
 		'booking:address': {
 			es: 'Dirección',
