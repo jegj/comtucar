@@ -586,15 +586,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<h2>Lugares Turísticos</h2>
-					<p>Carhuaz bajo el tutelar del Majestuoso Nevado Hualcán cuenta con un potencial turistico que sorprende a propios y extraños.</p>
+					<h2 class="trn" data-trn-key="touristic">Lugares Turísticos</h2>
+					<p class="trn" data-trn-key="touristic:des">Carhuaz bajo el tutelar del Majestuoso Nevado Hualcán cuenta con un potencial turistico que sorprende a propios y extraños.</p>
 				</div>
 			</div>
 			<br/>
 			<div class="row content-img-right">
 					<div class="col-md-6">
-							<h3>Punta Olimpica</h3>
-							<p align="justify">
+							<h3 class="trn" data-trn-key="touristic:peak">Punta Olímpica</h3>
+							<p align="justify" class="trn" data-trn-key="touristic:peak:des">
 								A 4,890 m.s.n.m. ubicado en la carretera Carhuaz - Shilla-Chacas, donde se puede observar y palpar la nieve perpetua y las aguas cristalinas de vistosas lagunas, asi como practicar el "Siqui Esqui" o sea deslizarse sentado sobre la nieve. Es el lugar del tunel vehicular mas largo del Peru y el de mayor altitud en el mundo.
 							</p>
 					</div>
@@ -606,8 +606,8 @@
 			</div>
 			<div class="row content-img-left">
 				<div class="col-md-6 pull-right">
-						<h3>Banos Termales de Chancos</h3>
-						<p align="justify">
+						<h3 class="trn" data-trn-key="touristic:chancos">Baños Termales de Chancos</h3>
+						<p align="justify" class="trn" data-trn-key="touristic:chancos:des">
 							Sea por turismo o por razones de salud, es el lugar ideal por las propiedades curativas de este lugar. Sus aguas varian de 68 a 72^C. Existen cuevas, donde se pueden ingresar hojas de eucalipto y por la accion del vapor emanan un aroma que penetra a los pulmones favoreciendo a quienes padecen de problemas musculares y respiratorios.
 						</p>
 				</div>
@@ -619,8 +619,8 @@
 			</div>
 			<div class="row content-img-right">
 					<div class="col-md-6">
-							<h3>Centro Arqueologico Honcopampa</h3>
-							<p align="justify">
+							<h3 class="trn" data-trn-key="touristic:honcopampa">Centro Arqueologico Honcopampa</h3>
+							<p align="justify" class="trn" data-trn-key="touristic:honcopampa:des">
 								Ha sido el escenario de los grupos etnicos 700 a 1000 D.C. Son doce hectareas divididos en dos sectores: Residencial y ceremonial de tumbas.  Las viviendas son rectangulares con patio central y las tumbas son necropolis de chullpas o mausoleos de dos pisos.
 							</p>
 					</div>
@@ -632,8 +632,8 @@
 			</div>
 			<div class="row content-img-left">
 				<div class="col-md-6 pull-right">
-						<h3>Nevado Huascaran</h3>
-						<p align="justify">
+						<h3 class="trn" data-trn-key="touristic:huascaran">Nevado Huascaran</h3>
+						<p align="justify" class="trn" data-trn-key="touristic:huascaran:des">
 							Es el nevado mas alto del Perú a 6768 m.s.n.m. y el más popular.  Se ubica en Yungay, a 20 kms de Carhuaz.  Al pie se encuentran las lagunas de Llanganuco, de aguas turquezas y los bosques de quenuales.  Es una zona impresionante y su caracterisitca principal es la biodiversividad de flora y fauna.
 						</p>
 				</div>
@@ -733,7 +733,11 @@
 						<i class="fa fa-times-circle"></i>
 					</button>
 					<h4 class="modal-title" id="inquiryModalLabel">
-						<i class="icon-calendar"></i> Reserva</h4>
+						<i class="icon-calendar"></i>
+						<span class="trn" data-trn-key="booking:label">
+							Reserva
+						</span>
+					</h4>
 				</div>
 				<!-- Modal header end -->
 
@@ -746,41 +750,61 @@
 						<div class="room-select">
 							<div class="input-group">
 								<select name="Habitación" id="inquiry-object" class="form-control" required>
-									<option value="">Seleccione su Habitación</option>
-									<option value="Simple">Simple (S/.60)</option>
-									<option value="Simple-Temporada Alta">Simple - Semana Santa o Fiestas Patrias(S/.100)</option>
-									<option value="Doble/Matrimonial">Doble/Matrimonial(S/.100)</option>
-									<option value="Doble/Matrimonial-Temporada Alta">Doble/Matrimonial - Semana Santa o Fiestas Patrias( Desde S/.160)</option>
-									<option value="Triple">Triples(S/.140)</option>
-									<option value="Triple-Temporada Alta">Triples - Semana Santa o Fiestas Patrias(S/.180)</option>
-									<option value="Suite Matrimonial">Suite Matriomonial(S/.160)</option>
-									<option value="Suite Matrimonial-Temporada Alta">Suite Matriomonial - Semana Santa o Fiestas Patrias(S/.230)</option>
+									<option value="" class="trn" data-trn-key="booking:select">
+										Seleccione su Habitación
+									</option>
+									<option value="Simple" class="trn" data-trn-key="booking:single">
+										Simple (S/.60)
+									</option>
+									<option value="Simple-Temporada Alta" class="trn" data-trn-key="booking:single:easter">
+										Simple - Semana Santa o Fiestas Patrias(S/.100)
+									</option>
+									<option value="Doble/Matrimonial" class="trn" data-trn-key="booking:double">
+										Doble/Matrimonial(S/.100)
+									</option>
+									<option value="Doble/Matrimonial-Temporada Alta" class="trn" data-trn-key="booking:double:easter">
+										Doble/Matrimonial - Semana Santa o Fiestas Patrias(S/.160)
+									</option>
+									<option value="Triple" class="trn" data-trn-key="booking:triple">
+										Triple(S/.140)
+									</option>
+									<option value="Triple-Temporada Alta" class="trn" data-trn-key="booking:triple:easter">
+										Triples - Semana Santa o Fiestas Patrias(S/.180)
+									</option>
+									<option value="Suite Matrimonial" class="trn" data-trn-key="booking:matrimonial">
+										Suite Matriomonial(S/.160)
+									</option>
+									<option value="Suite Matrimonial-Temporada Alta" class="trn" data-trn-key="booking:matrimonial:easter">
+										Suite Matriomonial - Semana Santa o Fiestas Patrias(S/.230)
+									</option>
 								</select>
 							</div>
 						</div>
 
 						<div class="form-group first-name-group">
-							<label for="Total de Pasajeros">Total del Pasajeros</label>	
+							<label for="Total de Pasajeros" class="trn" data-trn-key="booking:passenger">
+								Total del Pasajeros
+							</label>	
 							<input step="1" min="1" type="number" class="form-control" name="Total Pasajeros" id="total-passengers" placeholder="Total del Pasajeros" required>
 						</div>
 						<div class="form-group last-name-group">
-							<label for="Cama Adicionales">Cama Adicionales</label>	
+							<label for="Cama Adicionales" class="trn" data-trn-key="booking:beds">Cama Adicionales</label>	
 							<input value="0" step="1" min="0" type="number" class="form-control" name="Cama Adicionales" id="extra-beds" placeholder="Camas Adicionales">
 						</div>
 						
-						<label><b>(*)Los desayunos son incluidos en la tarifa de Temporada Alta</b></label>	
+						<label><b class="trn" data-trn-key="booking:breakfast">(*)Los desayunos son incluidos en la tarifa de Temporada Alta</b></label>	
 						<div class="form-group first-name-group">
-							<label for="Desayuno Continental">Desayuno Continental</label>	
+							<label for="Desayuno Continental" class="trn" data-trn-key="booking:cbreakfast">Desayuno Continental</label>	
 							<input value="0" step="1" min="0" type="number" class="form-control" name="Desayuno Continental" id="continental-break" placeholder="Desayuno Continental">
 						</div>
 						<div class="form-group last-name-group">
-							<label for="Desayuno Americano">Desayuno Americano</label>	
+							<label for="Desayuno Americano"  class="trn" data-trn-key="booking:abreakfast">Desayuno Americano</label>	
 							<input value="0" step="1" min="0" type="number" class="form-control" name="Desayuno Americano" id="american-break" placeholder="Desayuno Americano">
 						</div>
 
 						<div class="inquiry-check-in">
 							<div class="date-select">
-								<label for="Fecha de Arrivo">Fecha de Arrivo</label>
+								<label for="Fecha de Arrivo"  class="trn" data-trn-key="booking:arrival">Fecha de Arrivo</label>
 
 								<div class="input-group">
 									<span class="input-group-addon">
@@ -791,7 +815,7 @@
 							</div>
 
 							<div class="time-select">
-								<label for="inquiry-time-check-in">Hora</label>
+								<label for="inquiry-time-check-in"  class="trn" data-trn-key="booking:harrival">Hora</label>
 
 								<div class="input-group">
 									<span class="input-group-addon">
@@ -856,7 +880,7 @@
 
 						<div class="inquiry-check-out">
 							<div class="date-select">
-								<label for="Fecha de Salida">Fecha de Salida</label>
+								<label for="Fecha de Salida" class="trn" data-trn-key="booking:depature">Fecha de Salida</label>
 
 								<div class="input-group">
 									<span class="input-group-addon">
@@ -866,14 +890,14 @@
 								</div>
 							</div>
 							<div class="time-select">
-								<label for="inquiry-time-check-out">Hora</label>
+								<label for="inquiry-time-check-out" class="trn" data-trn-key="booking:hdepature">Hora</label>
 
 								<div class="input-group">
 									<span class="input-group-addon">
 										<i class="icon-clock"></i>
 									</span>
 									<select name="Hora de Salida" class="form-control" id="inquiry-time-check-out" required>
-										<option value="">Seleccione la Hora</option>
+										<option value="" class="trn" data-trn-key="booking:harrival:label">Seleccione la Hora</option>
 										<option value="12:00 AM">12:00 AM</option>
 										<option value="12:30 AM">12:30 AM</option>
 										<option value="01:00 AM">01:00 AM</option>
@@ -934,37 +958,37 @@
 
 					<!-- Appointment Personal Information start -->
 					<div class="personal-information">
-						<h2>Información Personal</h2>
+						<h2 class="trn" data-trn-key="booking:personallabel">Información Personal</h2>
 
 						<div class="form-group first-name-group">
-							<label for="Nombre">Nombre</label>
+							<label for="Nombre" class="trn" data-trn-key="booking:name">Nombre</label>
 							<input type="text" name="Nombre" class="form-control" id="first-name" placeholder="Coloque su Nombre" required>
 						</div>
 						<div class="form-group last-name-group">
-							<label for="Apellido">Apellido</label>
+							<label for="Apellido" class="trn" data-trn-key="booking:surname">Apellido</label>
 							<input type="text" name="Apellido" class="form-control" id="last-name" placeholder="Coloque su Apellido" required>
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-group address-group">
-							<label for="Dirección">Dirección</label>
+							<label for="Dirección" class="trn" data-trn-key="booking:address">Dirección</label>
 							<input type="text" name="Dirección" class="form-control" id="address" placeholder="Coloque su dirección">
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-group city-group">
-							<label for="Ciudad">Ciudad</label>
+							<label for="Ciudad" class="trn" data-trn-key="booking:city">Ciudad</label>
 							<input type="text" name="Ciudad" class="form-control" id="city" placeholder="Coloque su Ciudad">
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-group phone-group">
-							<label for="Telefono">Telefono</label>
+							<label for="Telefono" class="trn" data-trn-key="booking:phonenumber">Teléfono</label>
 							<input type="tel" name="Telefono" class="form-control" id="phone" placeholder="Coloque su Telefono" required>
 						</div>
 						<div class="form-group email-group">
-							<label for="email">Correo</label>
+							<label for="email" class="trn" data-trn-key="booking:email">Correo</label>
 							<input type="email" name="email" class="form-control" id="email" placeholder="Coloque su Correo" required>
 						</div>
 						<div class="form-group additional-details">
-							<label for="Información Adicional">Información Adicional</label>
+							<label for="Información Adicional" class="trn" data-trn-key="booking:addtional">Información Adicional</label>
 							<textarea name="Información Adicional" class="form-control" id="details" rows="4"></textarea>
 						</div>
 						<div class="clearfix"></div>
@@ -979,12 +1003,13 @@
 
 					<div class="inquiry-info">
 						<div class="inquiry-info-sign hidden-xs">!</div>
-						<p>Tomar en cuenta que este formulario no reserva totalmente la habitacion. Solo solicita una reserva para dicha habitacion. Los precios estan sujetos cambios de acuerdo a la temporada, asi como cualquier otro detalle que especifique.
+						<p>
+							<span class="trn" data-trn-key="booking:aware">Tomar en cuenta que este formulario no reserva totalmente la habitacion. Solo solicita una reserva para dicha habitacion. Los precios estan sujetos cambios de acuerdo a la temporada, asi como cualquier otro detalle que especifique.</span>
 							<br>
-							<strong>Nos pondremos en contacto brevemente via email o telefonica. Gracias!</strong>
+							<strong class="trn" data-trn-key="booking:aware:black">Nos pondremos en contacto brevemente via email o telefonica. Gracias!</strong>
 						</p>
 					</div>
-					<button type="submit" class="btn btn-inquiry-submit">Verificar Disponibilidad</button>
+					<button type="submit" class="btn btn-inquiry-submit trn" data-trn-key="booking:button">Verificar Disponibilidad</button>
 
 				</div>
 				<!-- Modal footer end -->
