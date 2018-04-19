@@ -26,9 +26,6 @@
 		<!-- Bootstrap 3 Date Picker -->
 		<link href="./css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
 
-		<!-- Google Open Sans Font -->
-		<!-- <link href="./css/css(1).css" rel="stylesheet" type="text/css"> -->
-
 		<!-- Font Awesome -->
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -87,30 +84,38 @@
 								<ul class="nav navbar-nav navbar-right">
 										<li>
 											<a class="scroll-to" href="#sc-aboutus">
-												Quienes Somos
+												<span class="trn" data-trn-key="navbar:whoarewe">
+													Quienes Somos
+												</span>
 											</a>
 										</li>
 										<li class="">
 											<a class="scroll-to" href="#sc-rooms">
-												Nuestros Servicios
+												<span class="trn" data-trn-key="navbar:services">
+													Nuestros Servicios
+												</span>
 											</a>
 										</li>
 										<li>
 											<a class="show-inquiry-modal" href="#sc-rates">
-												Reservas
+												<span class="trn" data-trn-key="navbar:booking">
+													Reservas
+												</span>
 											</a>
 										</li>
 										<li>
 											<a class="scroll-to" href="#sc-attractions" data-toggle="collapse" data-target=".navbar-collapse.in" >
-												Lugares Turísticos
+												<span class="trn" data-trn-key="navbar:areas">
+													Lugares Turísticos
+												</span>
 											</a>
 										</li>
 										<li>
 											<!--Language-Select start-->
 											<div class="language-select">
-												<a href="http://accommodation.themeinjection.com/theme/index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-													<img src="./images/uk_flag.png" alt="English"> 
-													English
+												<a href="#" class="dropdown-toggle lang_selector" data-value="en" data-toggle="dropdown" role="button" aria-expanded="false">
+													<img src="./images/en_flag.png" alt="English"> 
+													<span class="lng_label">English</span>
 													<i class="glyphicon glyphicon-resize-vertical"></i>
 												</a>
 											</div>
@@ -173,7 +178,9 @@
 						<i class="fa fa-star" style="color:yellow"></i>
 					</h2>
 					<address>Carretera Central Carhuaz - Huaraz N° 1099</address>
-					<p class="address-info">Si tienes preguntas, no dudes en llamarnos o escribirnos:</p>
+					<p class="address-info trn"  data-trn-key="slogan">
+						Si tienes preguntas, no dudes en llamarnos o escribirnos:
+					</p>
 					<ul class="phones">
 						<li>
 							<a href="tel:+51043394051">
@@ -196,28 +203,14 @@
 		</div>
 	</section>
 
-	<!--Call to Action start-->
-	<!-- <section class="call-to-action container" id="sc-call-to-action">
-		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
-				<div class="call-to-action-box text-center">
-					<div class="call-to-action-triangle"></div>
-					<button id="callbtn" class="btn btn-color1 call-to-action-button show-inquiry-modal">
-						<i class="icon-calendar icons"></i> Llamanos!
-					</button>
-					<a id="calllink" class="call-to-action-phone" href="tel:+51043394051">+51 (043) 394051 </a>
-				
-				</div>
-			</div>
-		</div>
-	</section> -->
-
 	<!--Features start-->
 	<section class="features" id="sc-features">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Bienvenidos</h2>
+					<h2 class="trn" data-trn-key="welcome">
+						Bienvenidos
+					</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -227,8 +220,10 @@
 						<div class="feature-icon">
 								<i class="fa fa-sun-o" aria-hidden="true"></i>
 						</div>
-						<h3>Clima</h3>
-						<p align="justify">
+						<h3 class="trn" data-trn-key="fatures:climate">
+							Clima
+						</h3>
+						<p align="justify" class="trn" data-trn-key="feature:climate:des">
 							Sol radiante todo el año para poder disfrutar de la mejor manera las diversas excursiones y atractivos turisticos de la
 							región.
 						</p>
@@ -244,13 +239,15 @@
 								<i class="icon-map"></i>
 							</a>
 						</div>
-						<h3>Ubicación Ideal</h3>
-						<p align="justify">
+						<h3 class="trn" data-trn-key="features:location">
+							Ubicación Ideal
+						</h3>
+						<p align="justify" class="trn" data-trn-key="feature:location:des">
 							Inmejorable en la carretera Huaraz - Caraz, a tan solo 25 minutos de Huaraz. Nuestra ubicacion privilegiada nos ubica en
 							el centro de los atractivos turisticos. 
 						</p>
 						<a style="margin-bottom: 5px;" target="blank" title="Ver Ubicación" href="https://www.google.com.pe/maps/place/Hotel+COMTUCAR/@-9.2877874,-77.6400216,17z/data=!4m5!3m4!1s0x91a9419cfaadcf2b:0x1709cde9935fa88!8m2!3d-9.2876512!4d-77.6399916?hl=es-419" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">
-							<i class="fa fa-map-marker"></i> Ver Ubicación
+							<i class="fa fa-map-marker"></i> <span  class="trn" data-trn-key="feature:location:btn">Ver Ubicación</span>	
 						</a>
 					</div>
 				</div>
@@ -262,8 +259,10 @@
 						<div class="feature-icon">
 							<i class="fa fa-tree"></i>
 						</div>
-						<h3>Encuentro Natural</h3>
-						<p align="justify">
+						<h3 class="trn" data-trn-key="feature:nature">
+							Encuentro Natural
+						</h3>
+						<p align="justify" class="trn" data-trn-key="feature:nature:des">
 							Un lugar para disfrutar con la familia y amigos rodeado de arboles frutales y plantas silvestres, con vista al majestuoso nevado Hualcan o a la Cordillera Negra rodeado de tranquilidad, naturaleza y aire puro.
 						</p>
 					</div>
@@ -280,13 +279,15 @@
 			<!--Content Image Right start-->
 			<div class="row content-img-right">
 				<div class="col-md-6">
-					<h2>Quienes Somos</h2>
+					<h2 class="trn" data-trn-key="whoarewe:title">
+						Quienes Somos
+					</h2>
 	
-					<p align="justify">El Complejo Turístico Carhuaz S.A. es un Hotel 3 estrellas fruto de una iniciativa familiar, damos una calurosa bienvenida
+					<p align="justify" class="trn" data-trn-key="whoarewe:p1">El Complejo Turístico Carhuaz S.A. es un Hotel 3 estrellas fruto de una iniciativa familiar, damos una calurosa bienvenida
 						a los turistas nacionales y extranjeros que deciden visitar el Corazón del Callejón de Huaylas. Nuestra misión es servir
 						amistosamente a quienes nos visitan, esmerándonos para que su estadía sea placentera y confortable, porque ponemos en
 						cada nuevo huésped el mismo entusiasmo que tuvimos con el primero.</p>
-					<p align="justify">Las características físicas, naturales y de ubicación convierten al Hotel en un lugar ideal para viajeros que vienen
+					<p align="justify" class="trn" data-trn-key="whoarewe:p2">Las características físicas, naturales y de ubicación convierten al Hotel en un lugar ideal para viajeros que vienen
 						a descansar, en busca de la naturaleza y una alternativa tranquila y placentera comparada al bullicio que se encuentra
 						en hoteles en Huaraz. Por otro lado Carhuaz está ubicado a una altura de 450 metros menos sobre el nivel del mar comparado
 						con Huaraz.</p>
@@ -307,19 +308,25 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Nuestros Servicios</h2>
+					<h2 class="trn" data-trn-key="services:title">Nuestros Servicios</h2>
 				</div>
 				<div class="col-md-12">
 					<!--Room Tabs Nav start -->
 					<ul class="nav nav-tabs" role="tablist">
 						<li role="presentation" class="active">
-							<a href="#object2" aria-controls="object2" role="tab" data-toggle="tab">Habitaciones</a>
+							<a href="#object2" aria-controls="object2" role="tab" data-toggle="tab">
+								<span class="trn" data-trn-key="services:rooms">Habitaciones</span>	
+							</a>
 						</li>
 						<li role="presentation">
-							<a href="#object3" aria-controls="object3" role="tab" data-toggle="tab">Áreas Comunes</a>
+							<a href="#object3" aria-controls="object3" role="tab" data-toggle="tab">
+								<span class="trn" data-trn-key="services:communalareas">Áreas Comunes</span>
+							</a>
 						</li>
 						<li role="presentation">
-							<a href="#object1" aria-controls="object1" role="tab" data-toggle="tab">Sala de Recepciones</a>
+							<a href="#object1" aria-controls="object1" role="tab" data-toggle="tab">
+								<span class="trn" data-trn-key="services:conference">Sala de Recepciones</span>
+							</a>
 						</li>
 					</ul>
 					<!--Room Tabs Nav end -->
@@ -338,32 +345,37 @@
 										<div class="room-tabs-gallery-image">
 											<a class="room-tabs-gallery-preview-container" href="#">
 												<img class="img-responsive" src="./images/recepcion/sala_recepciones.jpg" alt="Salón de Recepciones" title="Salon de Recepciones">
-											</a>	
-											<div class="room-tabs-gallery-caption" style="text-align:center;">
-												<button class="btn btn-room-check show-inquiry-modal btn-lg btn-block" data-object="The Sea Villa">
-													<i class="icon-calendar icons"></i> Reserva Ahora
-												</button>
-											</div>
+											</a>
 										</div>
 										<div class="clearfix"></div>
 									</div>
 								</div>
 								<div class="col-md-6 room-tabs-description">
-									<h3>Nuestra Sala de Recepciones:</h3>
-									<p>
+									<h3 class="trn" data-trn-key="services:conference">Sala de Recepciones</h3>
+									<p class="trn" data-trn-key="services:conference:des">
 										Ofrecemos ambientes y salones especialmente acondicionados para eventos: Matrimonios, conferencias, exposiciones, agasajos, etc.
 									</p>
 									<div class="row">
 										<div class="col-md-12 col-sm-12">
 											<ul class="list-group room-tabs-checklist left">
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Servicios de mozos, vajilla, mantelería
+													<i class="fa fa-check-square-o"></i>
+													<span class="trn" data-trn-key="services:conference:d1">
+														Servicios de mozos, vajilla, mantelería
+													</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Servicio de amplificación, música ambiental
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:conference:d2">
+														Servicio de amplificación, música ambiental
+													</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Opciones de comidas típicas o la alternativa que Ud. disponga, pues finalmente estamos para servirlo
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:conference:d3">
+														Opciones de comidas típicas o la alternativa que Ud. disponga, pues finalmente estamos para servirlo
+													</span>
+													
 												</li>
 											</ul>
 										</div>
@@ -398,7 +410,7 @@
 	
 											<div class="room-tabs-gallery-caption" style="text-align:center;">
 												<button class="btn btn-room-check show-inquiry-modal btn-lg btn-block" data-object="The Sea Villa">
-													<i class="icon-calendar icons"></i> Reserva Ahora
+													<i class="icon-calendar icons"></i><span class="trn" data-trn-key="services:book:btn">Reserva Ahora</span> 
 												</button>
 											</div>
 										</div>
@@ -406,37 +418,58 @@
 									</div>
 								</div>
 								<div class="col-md-6 room-tabs-description">
-									<h3>Nuestras Habitaciones:</h3>
-									<p>
+									<h3 class="trn" data-trn-key="services:rooms">Habitaciones</h3>
+									<p class="trn" data-trn-key="services:rooms:des">
 										Contamos con 38 habitaciones las cuales cuentan con la siguientes facilidades:
 									</p>
 									<div class="row">
 										<div class="col-md-6 col-sm-6">
 											<ul class="list-group room-tabs-checklist left">
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Simples
+													<i class="fa fa-check-square-o"></i>
+													<span class="trn" data-trn-key="services:rooms:single">
+														Simples
+													</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Dobles/Matrimoniales
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:rooms:double">
+														Dobles/Matrimoniales
+													</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Triples
+													<i class="fa fa-check-square-o"></i>
+													<span class="trn" data-trn-key="services:rooms:triple">
+														Triple
+													</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Suite con jacuzzi
+													<i class="fa fa-check-square-o"></i>
+													<span class="trn" data-trn-key="services:rooms:jacuzzi">
+														Suite con jacuzzi
+													</span>	
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Baño Privados
+													<i class="fa fa-check-square-o"></i>
+													<span class="trn" data-trn-key="services:rooms:privatebathroom">
+														Baño Privado
+													</span>
 												</li>
 											</ul>
 										</div>
 										<div class="col-md-6 col-sm-6">
 											<ul class="list-group room-tabs-checklist right">
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Telefono
+													<i class="fa fa-check-square-o"></i>
+													<span class="trn" data-trn-key="services:rooms:phone">
+														Teléfono
+													</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Intercomunicador
+													<i class="fa fa-check-square-o"></i>
+													<span class="trn" data-trn-key="services:rooms:intercom">
+														Intercomunicador
+													</span>
 												</li>
 												<li class="list-group-item">
 													<i class="fa fa-check-square-o"></i> TV - Cable
@@ -483,46 +516,56 @@
 									</div>
 								</div>
 								<div class="col-md-6 room-tabs-description">
-									<h3>Areas comunes</h3>
+									<h3 class="trn" data-trn-key="services:communalareas">Areas comunes</h3>
 	
-									<p>Pensando en su estadia y sus necesidades contamos con las siguentes instalaciones y servicios:
+									<p class="trn" data-trn-key="services:communalareas:des">Pensando en su estadia y sus necesidades contamos con las siguentes instalaciones y servicios:
 									</p>
 									<div class="row">
 										<div class="col-md-6">
 											<ul class="list-group room-tabs-checklist left">
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Restaurant,  bar y cafeteria
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:communalareas:restaurant">Restaurant,  bar y cafeteria</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Sala de Estar
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:communalareas:living">Sala de Estar</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Auditorio/Sala de Conferencias
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:communalareas:aud">Auditorio/Sala de Conferencias</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Lavanderia
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:communalareas:laundry">Lavanderia</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Estacionamiento Privado
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:communalareas:parking">Estacionamiento Privado</span>
 												</li>
 											</ul>
 										</div>
 										<div class="col-md-6">
 											<ul class="list-group room-tabs-checklist right">
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Zona Campestre
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:communalareas:country">Zona Campestre</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Piscina
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:communalareas:pool">Piscina</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Guardiania Permanente
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:communalareas:vigilence">Guardiania Permanente</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Cancha de frontón
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:communalareas:fronton">Cancha de frontón</span>
 												</li>
 												<li class="list-group-item">
-													<i class="fa fa-check-square-o"></i> Mirador con vistas para tomar fotografias a los nevados y al paisaje andino
+													<i class="fa fa-check-square-o"></i> 
+													<span class="trn" data-trn-key="services:communalareas:lookput">Mirador con vistas para tomar fotografias a los nevados y al paisaje andino</span>
 												</li>
 											</ul>
 										</div>
@@ -543,15 +586,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<h2>Lugares Turísticos</h2>
-					<p>Carhuaz bajo el tutelar del Majestuoso Nevado Hualcán cuenta con un potencial turistico que sorprende a propios y extraños.</p>
+					<h2 class="trn" data-trn-key="touristic">Lugares Turísticos</h2>
+					<p class="trn" data-trn-key="touristic:des">Carhuaz bajo el tutelar del Majestuoso Nevado Hualcán cuenta con un potencial turistico que sorprende a propios y extraños.</p>
 				</div>
 			</div>
 			<br/>
 			<div class="row content-img-right">
 					<div class="col-md-6">
-							<h3>Punta Olimpica</h3>
-							<p align="justify">
+							<h3 class="trn" data-trn-key="touristic:peak">Punta Olímpica</h3>
+							<p align="justify" class="trn" data-trn-key="touristic:peak:des">
 								A 4,890 m.s.n.m. ubicado en la carretera Carhuaz - Shilla-Chacas, donde se puede observar y palpar la nieve perpetua y las aguas cristalinas de vistosas lagunas, asi como practicar el "Siqui Esqui" o sea deslizarse sentado sobre la nieve. Es el lugar del tunel vehicular mas largo del Peru y el de mayor altitud en el mundo.
 							</p>
 					</div>
@@ -563,8 +606,8 @@
 			</div>
 			<div class="row content-img-left">
 				<div class="col-md-6 pull-right">
-						<h3>Banos Termales de Chancos</h3>
-						<p align="justify">
+						<h3 class="trn" data-trn-key="touristic:chancos">Baños Termales de Chancos</h3>
+						<p align="justify" class="trn" data-trn-key="touristic:chancos:des">
 							Sea por turismo o por razones de salud, es el lugar ideal por las propiedades curativas de este lugar. Sus aguas varian de 68 a 72^C. Existen cuevas, donde se pueden ingresar hojas de eucalipto y por la accion del vapor emanan un aroma que penetra a los pulmones favoreciendo a quienes padecen de problemas musculares y respiratorios.
 						</p>
 				</div>
@@ -576,8 +619,8 @@
 			</div>
 			<div class="row content-img-right">
 					<div class="col-md-6">
-							<h3>Centro Arqueologico Honcopampa</h3>
-							<p align="justify">
+							<h3 class="trn" data-trn-key="touristic:honcopampa">Centro Arqueologico Honcopampa</h3>
+							<p align="justify" class="trn" data-trn-key="touristic:honcopampa:des">
 								Ha sido el escenario de los grupos etnicos 700 a 1000 D.C. Son doce hectareas divididos en dos sectores: Residencial y ceremonial de tumbas.  Las viviendas son rectangulares con patio central y las tumbas son necropolis de chullpas o mausoleos de dos pisos.
 							</p>
 					</div>
@@ -589,8 +632,8 @@
 			</div>
 			<div class="row content-img-left">
 				<div class="col-md-6 pull-right">
-						<h3>Nevado Huascaran</h3>
-						<p align="justify">
+						<h3 class="trn" data-trn-key="touristic:huascaran">Nevado Huascaran</h3>
+						<p align="justify" class="trn" data-trn-key="touristic:huascaran:des">
 							Es el nevado mas alto del Perú a 6768 m.s.n.m. y el más popular.  Se ubica en Yungay, a 20 kms de Carhuaz.  Al pie se encuentran las lagunas de Llanganuco, de aguas turquezas y los bosques de quenuales.  Es una zona impresionante y su caracterisitca principal es la biodiversividad de flora y fauna.
 						</p>
 				</div>
@@ -617,7 +660,7 @@
 						<i class="fa fa-star" style="color:yellow"></i>
 					</h2>
 					<address>Carretera Central Carhuaz - Huaraz N° 1099</address>
-					<p class="address-info">Si tienes preguntas, no dudes en llamarnos o escribirnos:</p>
+					<p class="address-info trn" data-trn-key="slogan">Si tienes preguntas, no dudes en llamarnos o escribirnos:</p>
 					<ul class="phones">
 						<li>
 							<a href="tel:+51043394051">
@@ -690,7 +733,11 @@
 						<i class="fa fa-times-circle"></i>
 					</button>
 					<h4 class="modal-title" id="inquiryModalLabel">
-						<i class="icon-calendar"></i> Reserva</h4>
+						<i class="icon-calendar"></i>
+						<span class="trn" data-trn-key="booking:label">
+							Reserva
+						</span>
+					</h4>
 				</div>
 				<!-- Modal header end -->
 
@@ -703,59 +750,79 @@
 						<div class="room-select">
 							<div class="input-group">
 								<select name="Habitación" id="inquiry-object" class="form-control" required>
-									<option value="">Seleccione su Habitación</option>
-									<option value="Simple">Simple (S/.60)</option>
-									<option value="Simple-Temporada Alta">Simple - Semana Santa o Fiestas Patrias(S/.100)</option>
-									<option value="Doble/Matrimonial">Doble/Matrimonial(S/.100)</option>
-									<option value="Doble/Matrimonial-Temporada Alta">Doble/Matrimonial - Semana Santa o Fiestas Patrias( Desde S/.160)</option>
-									<option value="Triple">Triples(S/.140)</option>
-									<option value="Triple-Temporada Alta">Triples - Semana Santa o Fiestas Patrias(S/.180)</option>
-									<option value="Suite Matrimonial">Suite Matriomonial(S/.160)</option>
-									<option value="Suite Matrimonial-Temporada Alta">Suite Matriomonial - Semana Santa o Fiestas Patrias(S/.230)</option>
+									<option value="" class="trn" data-trn-key="booking:select">
+										Seleccione su Habitación
+									</option>
+									<option value="Simple" class="trn" data-trn-key="booking:single">
+										Simple (S/.60)
+									</option>
+									<option value="Simple-Temporada Alta" class="trn" data-trn-key="booking:single:easter">
+										Simple - Semana Santa o Fiestas Patrias(S/.100)
+									</option>
+									<option value="Doble/Matrimonial" class="trn" data-trn-key="booking:double">
+										Doble/Matrimonial(S/.100)
+									</option>
+									<option value="Doble/Matrimonial-Temporada Alta" class="trn" data-trn-key="booking:double:easter">
+										Doble/Matrimonial - Semana Santa o Fiestas Patrias(S/.160)
+									</option>
+									<option value="Triple" class="trn" data-trn-key="booking:triple">
+										Triple(S/.140)
+									</option>
+									<option value="Triple-Temporada Alta" class="trn" data-trn-key="booking:triple:easter">
+										Triples - Semana Santa o Fiestas Patrias(S/.180)
+									</option>
+									<option value="Suite Matrimonial" class="trn" data-trn-key="booking:matrimonial">
+										Suite Matriomonial(S/.160)
+									</option>
+									<option value="Suite Matrimonial-Temporada Alta" class="trn" data-trn-key="booking:matrimonial:easter">
+										Suite Matriomonial - Semana Santa o Fiestas Patrias(S/.230)
+									</option>
 								</select>
 							</div>
 						</div>
 
 						<div class="form-group first-name-group">
-							<label for="Total del Pasajeros">Total del Pasajeros</label>	
-							<input step="1" min="1" type="number" class="form-control" name="Total Pasajeros" id="total-passengers" placeholder="Total del Pasajeros" required>
+							<label for="Total de Pasajeros" class="trn" data-trn-key="booking:passenger">
+								Total del Pasajeros
+							</label>	
+							<input step="1" min="1" type="number" class="form-control" name="Total Pasajeros" id="total-passengers" required>
 						</div>
 						<div class="form-group last-name-group">
-							<label for="Cama Adicionales">Cama Adicionales</label>	
-							<input value="0" step="1" min="0" type="number" class="form-control" name="Cama Adicionales" id="extra-beds" placeholder="Camas Adicionales">
+							<label for="Cama Adicionales" class="trn" data-trn-key="booking:beds">Cama Adicionales</label>	
+							<input value="0" step="1" min="0" type="number" class="form-control" name="Cama Adicionales" id="extra-beds">
 						</div>
 						
-						<label><b>(*)Los desayunos son incluidos en la tarifa de Temporada Alta</b></label>	
+						<label><b class="trn" data-trn-key="booking:breakfast">(*)Los desayunos son incluidos en la tarifa de Temporada Alta</b></label>	
 						<div class="form-group first-name-group">
-							<label for="Desayuno Continental">Desayuno Continental</label>	
-							<input value="0" step="1" min="0" type="number" class="form-control" name="Desayuno Continental" id="continental-break" placeholder="Desayuno Continental">
+							<label for="Desayuno Continental" class="trn" data-trn-key="booking:cbreakfast">Desayuno Continental</label>	
+							<input value="0" step="1" min="0" type="number" class="form-control" name="Desayuno Continental" id="continental-break">
 						</div>
 						<div class="form-group last-name-group">
-							<label for="Desayuno Americano">Desayuno Americano</label>	
-							<input value="0" step="1" min="0" type="number" class="form-control" name="Desayuno Americano" id="american-break" placeholder="Desayuno Americano">
+							<label for="Desayuno Americano"  class="trn" data-trn-key="booking:abreakfast">Desayuno Americano</label>	
+							<input value="0" step="1" min="0" type="number" class="form-control" name="Desayuno Americano" id="american-break">
 						</div>
 
 						<div class="inquiry-check-in">
 							<div class="date-select">
-								<label for="Fecha de Arrivo">Fecha de Arrivo</label>
+								<label for="Fecha de Arrivo"  class="trn" data-trn-key="booking:arrival">Fecha de Arrivo</label>
 
 								<div class="input-group">
 									<span class="input-group-addon">
 										<i class="icon-calendar"></i>
 									</span>
-									<input type="text" class="form-control datepicker" name="Fecha de Arrivo" id="inquiry-date-check-in" placeholder="Fecha: mm/dd/yyyy" required>
+									<input type="text" class="form-control datepicker" name="Fecha de Arrivo" id="inquiry-date-check-in" placeholder="mm/dd/yyyy" required>
 								</div>
 							</div>
 
 							<div class="time-select">
-								<label for="inquiry-time-check-in">Hora</label>
+								<label for="inquiry-time-check-in"  class="trn" data-trn-key="booking:harrival">Hora</label>
 
 								<div class="input-group">
 									<span class="input-group-addon">
 										<i class="icon-clock"></i>
 									</span>
 									<select name="Hora Llegada" class="form-control" id="inquiry-time-check-in" required>
-										<option value="">Seleccione la Hora</option>
+										<option value="" class="trn" data-trn-key="booking:harrival:label">Seleccione la Hora</option>
 										<option value="12:00 AM">12:00 AM</option>
 										<option value="12:30 AM">12:30 AM</option>
 										<option value="01:00 AM">01:00 AM</option>
@@ -813,24 +880,24 @@
 
 						<div class="inquiry-check-out">
 							<div class="date-select">
-								<label for="Fecha de Salida">Fecha de Salida</label>
+								<label for="Fecha de Salida" class="trn" data-trn-key="booking:depature">Fecha de Salida</label>
 
 								<div class="input-group">
 									<span class="input-group-addon">
 										<i class="icon-calendar"></i>
 									</span>
-									<input type="text" class="form-control datepicker" name="Fecha de Salida" placeholder="Fecha: mm/dd/yyyy" id="inquiry-date-check-out" required>
+									<input type="text" class="form-control datepicker" name="Fecha de Salida" placeholder="mm/dd/yyyy" id="inquiry-date-check-out" required>
 								</div>
 							</div>
 							<div class="time-select">
-								<label for="inquiry-time-check-out">Hora</label>
+								<label for="inquiry-time-check-out" class="trn" data-trn-key="booking:hdepature">Hora</label>
 
 								<div class="input-group">
 									<span class="input-group-addon">
 										<i class="icon-clock"></i>
 									</span>
 									<select name="Hora de Salida" class="form-control" id="inquiry-time-check-out" required>
-										<option value="">Seleccione la Hora</option>
+										<option value="" class="trn" data-trn-key="booking:harrival:label">Seleccione la Hora</option>
 										<option value="12:00 AM">12:00 AM</option>
 										<option value="12:30 AM">12:30 AM</option>
 										<option value="01:00 AM">01:00 AM</option>
@@ -891,37 +958,37 @@
 
 					<!-- Appointment Personal Information start -->
 					<div class="personal-information">
-						<h2>Información Personal</h2>
+						<h2 class="trn" data-trn-key="booking:personallabel">Información Personal</h2>
 
 						<div class="form-group first-name-group">
-							<label for="Nombre">Nombre</label>
-							<input type="text" name="Nombre" class="form-control" id="first-name" placeholder="Coloque su Nombre" required>
+							<label for="Nombre" class="trn" data-trn-key="booking:name">Nombre</label>
+							<input type="text" name="Nombre" class="form-control" id="first-name" required>
 						</div>
 						<div class="form-group last-name-group">
-							<label for="Apellido">Apellido</label>
-							<input type="text" name="Apellido" class="form-control" id="last-name" placeholder="Coloque su Apellido" required>
+							<label for="Apellido" class="trn" data-trn-key="booking:surname">Apellido</label>
+							<input type="text" name="Apellido" class="form-control" id="last-name" required>
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-group address-group">
-							<label for="Dirección">Dirección</label>
-							<input type="text" name="Dirección" class="form-control" id="address" placeholder="Coloque su dirección" required>
+							<label for="Dirección" class="trn" data-trn-key="booking:address">Dirección</label>
+							<input type="text" name="Dirección" class="form-control" id="address" >
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-group city-group">
-							<label for="Ciudad">Ciudad</label>
-							<input type="text" name="Ciudad" class="form-control" id="city" placeholder="Coloque su Ciudad" required>
+							<label for="Ciudad" class="trn" data-trn-key="booking:city">Ciudad</label>
+							<input type="text" name="Ciudad" class="form-control" id="city">
 						</div>
 						<div class="clearfix"></div>
 						<div class="form-group phone-group">
-							<label for="Telefono">Telefono</label>
-							<input type="tel" name="Telefono" class="form-control" id="phone" placeholder="Coloque su Telefono" required>
+							<label for="Telefono" class="trn" data-trn-key="booking:phonenumber">Teléfono</label>
+							<input type="tel" name="Telefono" class="form-control" id="phone" required>
 						</div>
 						<div class="form-group email-group">
-							<label for="email">Correo</label>
-							<input type="email" name="email" class="form-control" id="email" placeholder="Coloque su Correo" required>
+							<label for="email" class="trn" data-trn-key="booking:email">Correo</label>
+							<input type="email" name="email" class="form-control" id="email" required>
 						</div>
 						<div class="form-group additional-details">
-							<label for="Información Adicional">Información Adicional</label>
+							<label for="Información Adicional" class="trn" data-trn-key="booking:addtional">Información Adicional</label>
 							<textarea name="Información Adicional" class="form-control" id="details" rows="4"></textarea>
 						</div>
 						<div class="clearfix"></div>
@@ -936,12 +1003,13 @@
 
 					<div class="inquiry-info">
 						<div class="inquiry-info-sign hidden-xs">!</div>
-						<p>Tomar en cuenta que este formulario no reserva totalmente la habitacion. Solo solicita una reserva para dicha habitacion. Los precios estan sujetos cambios de acuerdo a la temporada, asi como cualquier otro detalle que especifique.
+						<p>
+							<span class="trn" data-trn-key="booking:aware">Tomar en cuenta que este formulario no reserva totalmente la habitacion. Solo solicita una reserva para dicha habitacion. Los precios estan sujetos cambios de acuerdo a la temporada, asi como cualquier otro detalle que especifique.</span>
 							<br>
-							<strong>Nos pondremos en contacto brevemente via email o telefonica. Gracias!</strong>
+							<strong class="trn" data-trn-key="booking:aware:black">Nos pondremos en contacto brevemente via email o telefonica. Gracias!</strong>
 						</p>
 					</div>
-					<button type="submit" class="btn btn-inquiry-submit">Verificar Disponibilidad</button>
+					<button type="submit" class="btn btn-inquiry-submit trn" data-trn-key="booking:button">Verificar Disponibilidad</button>
 
 				</div>
 				<!-- Modal footer end -->
@@ -957,23 +1025,9 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="./js/jquery.min.js"></script>
-
-<!--Start Style Switcher (remove before upload to Themeforest)-->
-<!-- <script src="./theme_files/style-switcher.js"></script> -->
-<!--End Style Switcher (remove before upload to Themeforest)-->
-
-<!-- <script src="./js/jquery.placeholder.min.js"></script>
-<script src="./js/jquery.waypoints.min.js"></script>-->
+<script src="./js/jquery.translate.min.js"></script>
 <script src="./js/bootstrap-datepicker.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="./js/bootstrap.min.js"></script>
-
-<!-- Google Maps Api -->
-<!-- <script style="" type="text/javascript" src="./theme_files/js"></script> -->
-
-
-<!-- <script src="./theme_files/custom.js"></script> -->
-
-
-<script type="text/javascript" src="bundle.js?f40aca33782b62769c22"></script></body>
+<script type="text/javascript" src="bundle.js?4380ff4346816872af3f"></script></body>
 </html>
